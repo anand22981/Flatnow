@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".profileFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        >
+
+        <TextView
+            android:id="@+id/Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Account"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/Hello"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Hello" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_rectangle_background"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageMenu">
+
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></LinearLayout>
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:background="@color/teal_200"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/app_name"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_account" />
+
+    <TextView
+        android:id="@+id/textfindone"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/Registerone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/teal_200"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_home" />
+
+    <TextView
+        android:id="@+id/textfindtwo"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Post your property"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/Aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/teal_200"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/textfindthree"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Contact us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/Contactus"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/teal_200"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/textfindfour"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Rate us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/Rateus"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/teal_200"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_info" />
+
+    <TextView
+        android:id="@+id/textfindfive"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="About us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

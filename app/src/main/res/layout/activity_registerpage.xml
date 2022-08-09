@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registerpage"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Upload Property"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageone"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Browse Image"
+        android:id="@+id/browse"/>
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Owner Name"
+            android:textColor="@color/black"
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/OwnerName"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#5676"
+            android:layout_marginLeft="48dp"
+            android:hint="Enter Your Name"
+
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Contact No   "
+            android:textColor="@color/black"
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ContactNo"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#5676"
+            android:layout_marginLeft="48dp"
+            android:hint="Enter contact number"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Amount         "
+            android:textColor="@color/black"
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Amount"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#5676"
+            android:layout_marginLeft="48dp"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Address        "
+            android:textColor="@color/black"
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#5676"
+            android:layout_marginLeft="48dp"
+            android:hint="Enter property Address"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="City                "
+            android:textColor="@color/black"
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#5676"
+            android:layout_marginLeft="48dp"
+            android:hint="Enter your city"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:id="@+id/room1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:gravity="center"
+            android:text="Room"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/flat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat"
+            android:layout_marginLeft="48dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bhk"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="200dp"
+            android:layout_marginLeft="110dp"
+            android:layout_height="30dp"
+            android:hint="Enter Bhk"
+
+            android:background="#5676"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#F5FBF6"
+        android:background="#B71C1C"
+
+
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
+
+

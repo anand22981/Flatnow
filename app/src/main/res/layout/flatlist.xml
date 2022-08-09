@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:padding="40dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/trendingstart">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/idRLFlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+      <ImageView
+        android:id="@+id/networkImageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textViewflatdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="2BHK "
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewflatcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewflatdescription"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="6dp"
+            android:gravity="center"
+            android:text="KHAGARIA"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewflatcontactno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:icon="@drawable/ic_phone"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:text="95678890088"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewflatprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewflatcontactno"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="3dp"
+
+            android:text="INR 56990"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
